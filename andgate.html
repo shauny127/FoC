@@ -1,53 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AND</title>
-	<style>
-.button {
-  background-color: #008CBA; /* Blue */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AND Gate</title>
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        /* Custom Button Styling */
+        .button {
+            background-color: #008CBA; /* Blue */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+		/* Footer Styling */
+        footer {
+            background-color: #bda2ff; /* Footer color */
+            color: white; /* Text color for footer */
+            text-align: center; /* Center text */
+            padding: 10px 0; /* Padding for footer */
+        }
+		body { background-color: #e1d5ff; font-size: 16px; }
+    </style>
 </head>
 <body>
 
-<script src = "javascript.js"></script>
-<script> 
+<div class="container mt-5">
+    <!-- Row for Button and Image -->
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <!-- Bootstrap Button with custom styling -->
+            <button class="btn btn-primary" onclick="and()">Run</button>
+        </div>
+    </div>
 
-</script>
+    <!-- Row for Images and Table -->
+    <div class="row mt-4">
+    <div class="col-md-6 text-center">
+        <!-- Use local paths for images -->
+        <img src="button-off-xxl.png" id="toggleImage" onclick="toggleImage(); toggleInputOne();" class="img-fluid"/>
+        <br>
+        <img src="button-off-xxl.png" id="toggleImage2" onclick="toggleImage2(); toggleInputTwo();" class="img-fluid"/>
+    </div>
+    <div class="col-md-6 text-center">
+        <img id="andGate" src="and2off.png" class="img-fluid"/>
+    </div>
+</div>
 
- <button class="button" onclick = "and()">Run</button>
-<p>
+    <!-- Back Link -->
+    <div class="row mt-4">
+        <div class="col-md-12 text-center">
+            <a href="index.html" class="btn btn-link">Back to Home</a>
+        </div>
+    </div>
+</div>
 
-<table style="width:100%">
+<!-- JavaScript Links -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK4Y4E6Ff5oJ1QwK6nGvYXenH9xgEAy5p9o5pDa42xAep9V1XlA5" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1pL3IYZXs7huV7Geir92y1m0yOslpDZT5Or8k2QlIN6gg/m39ntTrG" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQ2s6x5to4/OGpamoFVy38VJX7fWgQkVfGGFf" crossorigin="anonymous"></script>
 
-  <tr>
-    <td>
-	<img src="https://www.iconsdb.com/icons/preview/red/button-off-xxl.png"  id="toggleImage" onclick="toggleImage(); toggleInputOne();"/>
-	<br>
-    <img src="https://www.iconsdb.com/icons/preview/red/button-off-xxl.png"  id="toggleImage2" onclick="toggleImage2(); toggleInputTwo();"/> 
-</td>
-    <td><img id="andGate" src="and2off.PNG" ></td>
-  </tr>
-
-</table>
-
-<a href="index.html">Back to Home</a></h3>
-
-</p>
-
-
-
-
-
+<script src="javascript.js"></script>
 
 </body>
+<footer>
+        <p>@ Powered by UB</p>
+    </footer>
+
 </html>
