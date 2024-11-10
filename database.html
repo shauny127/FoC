@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fundamentals of Computing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Custom styles */
+        body, h1, h2, h3, h4, h5 { 
+            font-family: "Poppins", sans-serif; 
+            color: black; 
+        }
+        body { 
+            background-color: #e1d5ff; 
+            font-size: 16px; 
+        }
+
+        /* Sidebar Styling */
+        #mySidebar {
+            display: none; /* Initially hidden */
+            position: fixed;
+            z-index: 3;
+            width: 300px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #bda2ff; /* Set sidebar background color */
+            padding-top: 64px;
+        }
+
+        .w3-bar-item {
+            font-size: 18px;
+            padding: 8px 16px;
+        }
+
+        /* Custom sidebar color */
+        .custom-sidebar {
+            background-color: #bda2ff;  
+            color: white;               
+        }
+
+        /* Adjust content margin when sidebar is open */
+        body.sidebar-open {
+            margin-left: 300px;
+        }
+        
+        /* Hover effect for sidebar links */
+        .w3-bar-item:hover {
+            background-color: #d4b9ff;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #bda2ff; /* Change footer color to #bda2ff */
+            color: white; /* Text color for footer */
+            text-align: center; /* Center text */
+            padding: 10px 0; /* Padding for footer */
+        }
+
+        /* Hover effect for images */
+        .w3-half img { 
+            margin-bottom: -6px; 
+            margin-top: 16px; 
+            opacity: 0.8; 
+            cursor: pointer; 
+        }
+        .w3-half img:hover { 
+            opacity: 1; 
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-large w3-padding custom-sidebar" id="mySidebar">
+    <br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+        <h3 class="w3-padding-64"><b>Fundamentals of Computing</b></h3>
+    </div>
+    <div class="w3-bar-block">
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course</a> 
+        <a href="project.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project</a> 
+        <a href="concepts.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Concepts</a> 
+        <a href="database.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Databases</a> 
+        <a href="documentation.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Documentation</a> 
+        <a href="aboutme.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Dev Team</a>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Fundamentals of Computing</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Page Content -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo"><b>Fundamentals of Computing</b></h1>
+        <hr style="width:50px;border:5px solid #8756ff" class="w3-round">
+    </div>
+
+    <!-- Content Section -->
+    <div class="w3-container text-center">
+        <a href="https://drive.google.com/file/d/1gL6zYcdEBFgzvh-4iPgwfkvESouDlsbX/view">
+            <img src="database.PNG" alt="database" class="img-fluid" style="width: 100%; max-width: 515px;">
+        </a>
+        <p>Click on the image above for presentation.</p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>@ Powered by UB</p>
+</footer>
+
+<!-- Sidebar/Modal Scripts -->
+<script>
+    // Open the sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.body.classList.add("sidebar-open");  // Add class for margin adjustment
+        document.getElementById("myOverlay").style.display = "block"; // Show overlay
+    }
+
+    // Close the sidebar
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.body.classList.remove("sidebar-open");  // Remove margin adjustment
+        document.getElementById("myOverlay").style.display = "none"; // Hide overlay
+    }
+</script>
+
+</body>
+</html>

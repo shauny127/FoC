@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Project - AND Logic Gate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        h2 { margin-top: 20px; }
+        .button-group button { margin: 5px; }
+        footer { background-color: #ff5338; color: white; padding: 10px; text-align: center; }
+        img { max-width: 100%; height: auto; margin-top: 20px; }
+		/* Footer Style */
+        footer {
+            background-color: #bda2ff; /* Change the background color to #bda2ff */
+            color: white; /* Set text color to white for contrast */
+            text-align: center; /* Center the text */
+            padding: 10px 0; /* Add padding to the footer */
+            font-size: 14px; /* Optional: Adjust the font size of the footer text */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header>
+        <h2>Final Project - AND Logic Gate</h2>
+        <p>This is an animation of an AND Logic Gate</p>
+		<style>
+        body { background-color: #e1d5ff; font-size: 16px; }
+		</style>
+    </header>
+
+    <!-- Button Group for Logic Gate States -->
+    <div class="button-group">
+        <button class="btn btn-primary" onclick="document.getElementById('myImage').src='and2off.png'">0 AND 0</button>
+        <button class="btn btn-primary" onclick="document.getElementById('myImage').src='andoffon.png'">0 AND 1</button>
+        <button class="btn btn-primary" onclick="document.getElementById('myImage').src='andonoff.png'">1 AND 0</button>
+        <button class="btn btn-primary" onclick="document.getElementById('myImage').src='and2on.png'">1 AND 1</button>
+    </div>
+
+    <!-- Display Image -->
+    <img id="myImage" src="and2off.png" alt="AND Gate Animation">
+
+    <!-- Back to Home Link -->
+    <p><a href="index.html" class="btn btn-link">Back to Home</a></p>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>@ Powered by UB</p>
+</footer>
+
+</body>
+</html>

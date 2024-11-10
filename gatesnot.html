@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript - Change Image Source</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+        body { background-color: #e1d5ff; font-size: 16px; }
+		
+        h2 { margin-top: 20px; }
+        .button-group button { margin: 5px; }
+        .large-image { width: 800px; height: auto; margin-top: 20px; } /* Larger image size */
+		/* Footer Style */
+        footer {
+            background-color: #bda2ff; /* Change the background color to #bda2ff */
+            color: white; /* Set text color to white for contrast */
+            text-align: center; /* Center the text */
+            padding: 10px 0; /* Add padding to the footer */
+            font-size: 14px; /* Optional: Adjust the font size of the footer text */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header>
+        <h2>What Can JavaScript Do?</h2>
+        <p>JavaScript can change HTML attribute values.</p>
+        <p>In this example, JavaScript changes the value of the <code>src</code> attribute of an image.</p>
+    </header>
+
+    <!-- Button Group for Image Toggle -->
+    <div class="button-group">
+        <button class="btn btn-success w3-button" onclick="document.getElementById('myImage').src='noton2.png'">On</button>
+        <button class="btn btn-danger w3-button" onclick="document.getElementById('myImage').src='notoff2.png'">Off</button>
+    </div>
+
+    <!-- Display Image with Larger Size -->
+    <img id="myImage" src="notoff2.png" alt="Toggle Image" class="large-image">
+</div>
+<footer>
+    <p>@ Powered by UB</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fundamentals of Computing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body, h1, h2, h3, h4, h5 { font-family: "Poppins", sans-serif; color: black; }
+        body { background-color: #e1d5ff; font-size: 16px; }
+
+        /* Sidebar Styling */
+        #mySidebar {
+            display: none; /* Initially hidden */
+            position: fixed;
+            z-index: 3;
+            width: 300px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #bda2ff;
+            padding-top: 64px;
+        }
+
+        .w3-bar-item {
+            font-size: 18px;
+            padding: 8px 16px;
+        }
+
+        .custom-sidebar {
+            background-color: #bda2ff;  
+            color: white;               
+        }
+
+        body.sidebar-open {
+            margin-left: 300px;
+        }
+        
+        .w3-bar-item:hover {
+            background-color: #d4b9ff;
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #bda2ff; /* Change the background color to #bda2ff */
+            color: white; /* Set text color to white for contrast */
+            text-align: center; /* Center the text */
+            padding: 10px 0; /* Add padding to the footer */
+            font-size: 14px; /* Optional: Adjust the font size of the footer text */
+        }
+
+        .link {
+            color: black; 
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            float: left;
+            padding-right: 40px; 
+            padding-left: 40px;
+            padding-bottom: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-large w3-padding custom-sidebar" id="mySidebar">
+    <br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+        <h3 class="w3-padding-64"><b>Fundamentals of Computing</b></h3>
+    </div>
+    <div class="w3-bar-block">
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course</a> 
+        <a href="project.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project</a> 
+        <a href="concepts.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Concepts</a> 
+        <a href="database.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Databases</a> 
+        <a href="documentation.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Documentation</a> 
+        <a href="aboutme.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Dev Team</a>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Fundamentals of Computing</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Page Content -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <header class="w3-container" style="margin-top:80px">
+        <h2><b>About Me</b></h2>
+    </header>
+
+    <section>
+        <article>
+            <p>
+                <img src="20240721_192137833_single.jpg" alt="Shandy Salam" width="250"  height="200">
+                Shandy Salam, a dedicated Computer Science undergraduate at the University of Belize, is 
+                passionate about making websites more engaging and has a strong interest in cybersecurity.
+                Seeking an opportunity to apply technical skills to create innovative and user-friendly digital 
+                solutions, Shandy is committed to using her education to serve others and contribute 
+                meaningfully to the advancement of Belize.
+            </p>
+            <div class="links">
+                <a class="link" href="https://shauny127.github.io/index.html/">My Resume</a> |
+                <a class="link" href="https://github.com/shauny127">My GitHub</a>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>@ Powered by UB</p>
+    </footer>
+
+</div>
+
+<!-- Sidebar/Modal Scripts -->
+<script>
+    // Open the sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.body.classList.add("sidebar-open");  // Add class for margin adjustment
+    }
+
+    // Close the sidebar
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.body.classList.remove("sidebar-open");  // Remove margin adjustment
+    }
+</script>
+
+</body>
+</html>

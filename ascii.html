@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FoC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+		 body { background-color: #e1d5ff; font-size: 16px; }
+        
+        }
+        img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Center the image */
+            margin: 20px auto; /* Center the image with margin */
+        }
+		/* Footer Style */
+        footer {
+            background-color: #bda2ff; /* Change the background color to #bda2ff */
+            color: white; /* Set text color to white for contrast */
+            text-align: center; /* Center the text */
+            padding: 10px 0; /* Add padding to the footer */
+            font-size: 14px; /* Optional: Adjust the font size of the footer text */
+        }
+    </style>
+</head>
+<body>
+
+<section class="container mt-5">
+    <h2>Project 1: ASCII</h2>
+    <hr>	
+    <div class="text-center">
+        <img src="ascii.png" class="img-fluid" alt="ASCII Project">
+    </div>
+        
+    <p>Enter any number from 0 to 127 :</p>
+    <input id="inputdec" class="form-control" style="width: 200px; display: inline-block;">
+    <p></p>
+    <button onclick="decToASCII()" class="btn btn-primary">Submit</button>
+    <p></p>
+    <p>ASCII Value :</p>
+    <p id="demo"></p>
+</section>
+
+<a href="index.html" class="btn btn-link">Back to Home</a>
+
+<footer>
+        <p>@ Powered by UB</p>
+    </footer>
+
+<script>
+function decToASCII() {
+    x = document.getElementById("inputdec").value;
+    var res = String.fromCharCode(x);
+    document.getElementById("demo").innerHTML = res;
+    console.log(res);
+}
+</script>
+
+</body>
+</html>

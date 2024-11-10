@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FoC - Project 1: NOT Gate</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <style>
+        body { background-color: #e1d5ff; font-size: 16px; }
+		/* Footer Styling */
+        footer {
+            background-color: #bda2ff; /* Footer color */
+            color: white; /* Text color for footer */
+            text-align: center; /* Center text */
+            padding: 10px 0; /* Padding for footer */
+        }
+   </style>
+</head>
+<body>
+
+<section class="container text-center my-5">
+   <h2>Project 1: NOT Gate</h2>
+
+   <div class="row my-4">
+      <div class="col-md-6 bg-secondary text-white py-4">
+         <h3>Input</h3>
+         <button class="btn btn-success my-2" onclick="document.getElementById('belizeImage').src='noton2.png'">ON</button>
+         <button class="btn btn-danger my-2" onclick="document.getElementById('belizeImage').src='notoff2.png'">OFF</button>
+      </div>
+      <div class="col-md-6 bg-light py-4">
+         <h3>Output</h3>
+         <hr>
+         <img id="belizeImage" src="noton2.png" alt="noton" class="img-fluid" style="width: 600px;">
+      </div>
+   </div>
+
+   <a href="index.html" class="btn btn-primary">Back to Home</a>
+</section>
+
+<footer>
+   <p>@ Powered by UB</p>
+</footer>
+
+</body>
+</html>

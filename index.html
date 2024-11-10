@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fundamentals of Computing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body, h1, h2, h3, h4, h5 {font-family: "Poppins", sans-serif; color: black;}
+        body {background-color: #e1d5ff; font-size: 16px;}
+        img {
+            display: block;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .link {
+            color: white; 
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+			
+        }
+		header.w3-container {
+    text-align: center;
+    margin-top: 80px; /* Keeps the same margin-top value */
+}
+article p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+/* Custom sidebar color */
+.custom-sidebar {
+    background-color: #bda2ff;  /* Blue color */
+    color: white;               /* White text color */
+}
+/* Footer Style */
+        footer {
+            background-color: #bda2ff; /* Change the background color to #bda2ff */
+            color: white; /* Set text color to white for contrast */
+            text-align: center; /* Center the text */
+            padding: 10px 0; /* Add padding to the footer */
+            font-size: 14px; /* Optional: Adjust the font size of the footer text */
+        }
+    /* Add more custom styling if needed */
+
+    </style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding custom-sidebar" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+    <br>
+    <div class="w3-container">
+        <h3 class="w3-padding-64"><b>Fundamentals of Computing</b></h3>
+    </div>
+    <div class="w3-bar-block">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-white">Course</a> 
+        <a href="project.html" class="w3-bar-item w3-button w3-hover-white">Project</a> 
+        <a href="concepts.html" class="w3-bar-item w3-button w3-hover-white">Concepts</a> 
+        <a href="database.html" class="w3-bar-item w3-button w3-hover-white">Databases</a> 
+        <a href="documentation.html" class="w3-bar-item w3-button w3-hover-white">Documentation</a> 
+        <a href="aboutme.html" class="w3-bar-item w3-button w3-hover-white">Dev Team</a>
+    </div>
+</nav>
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Fundamentals of Computing</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Page Content -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+   <header class="w3-container" style="margin-top:80px; text-align: center;">
+    <h2><b>Course Overview</b></h2>
+</header>
+
+
+    <section>
+        <article>
+            <img src="Foc.jpg" alt="FoC" width="505" height="182">
+            <p style="text-align: center;">This course is an introduction to the fundamentals of Computer Science that will provide students with a foundation for future courses in Computer Science. The course is a broad survey of the discipline through topics that allow students to understand the capabilities of computer systems in terms of: the computer architecture; operating systems and computer networks; software and software development; data organization and visualization; and the potential of computing machines.</p>
+
+        </article>
+    </section>
+
+    <footer>
+        <p>@ Powered by UB</p>
+    </footer>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+   

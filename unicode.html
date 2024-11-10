@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoC</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .image-container {
+    max-width: 70%; /* Ensures image doesn't overflow */
+    height: auto;
+  }
+
+  .img-responsive {
+    width: 70%;
+    height: auto;
+  }
+
+  /* Add some margin around the images */
+  .image-container img {
+    margin: 10px 0;
+  }
+  .emoji {
+    font-size: 40px;  /* Adjust the size as needed */
+  }
+
+  /* Footer Styling */
+  footer {
+    background-color: #bda2ff; /* Footer color */
+    color: white; /* Text color for footer */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding for footer */
+  }
+  
+  /* Body background color */
+		 body { background-color: #e1d5ff; font-size: 16px; }
+  
+</style>
+</head>
+<body>
+
+<section>
+<h2>Project 1: UNICODE</h2>
+<hr>
+
+<center>
+<p>Please input UNICODE number:</p>
+
+<input id="numb" type="text">
+
+<button type="button" onclick="myFunction()">Submit</button>
+<br>
+<div id="demo" class="emoji"></div>
+<!-- Table to display result -->
+<table class="table table-bordered" style="width:50%; margin-left:auto; margin-right:auto;">
+  <tr>
+    <th><center><p id="demo"></center></p></th>
+  </tr>
+</table>
+
+<!-- Displaying images with Bootstrap's img-fluid class for responsive images -->
+<div class="image-container">
+  <img src="uni1.jpg" class="img-fluid" style="width:70%; height:auto;" alt="UNICODE Image 1">
+</div>
+<div class="image-container">
+  <img src="uni3.jpg" class="img-fluid" style="width:70%; height:auto;" alt="UNICODE Image 2">
+</div>
+<div class="image-container">
+  <img src="uni4.jpg" class="img-fluid" style="width:70%; height:auto;" alt="UNICODE Image 3">
+</div>
+
+<p></p>
+<p></p>         
+
+<br>
+</center>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // Display the unicode
+  text = x;
+  unicode = ("&#x" + x)
+
+  document.getElementById("demo").innerHTML = unicode;
+}
+</script>
+
+</section>
+
+<a href="index.html">Back to Home</a>
+
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+
+</body>
+</html>
