@@ -31,47 +31,52 @@
         }
 		body { background-color: #e1d5ff; font-size: 16px; }
     </style>
-</head>
 <body>
 
-<div class="container mt-5">
-    <!-- Row for Button and Image -->
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <!-- Bootstrap Button with custom styling -->
-            <button class="btn btn-primary" onclick="and()">Run</button>
+<script src = "javascript.js"></script>
+<script> 
+
+</script>
+
+ 
+<p>
+
+<table style="width:100%">
+
+<div class="d-flex justify-content-around">
+  
+ <button class="btn btn-success" onclick="document.getElementById('clubImage').src='andonoff.png'">1 and 0</button>
+            <button class="btn btn-info" onclick="document.getElementById('clubImage').src='and2off.png'">0 and 0</button>
+   <button class="btn btn-success" onclick="document.getElementById('clubImage').src='andoffon.png'">0 and 1</button>
+            <button class="btn btn-info" onclick="document.getElementById('clubImage').src='and2on.png'">1 and 1</button>
+
+ </div>
+        <div class="text-center mt-3">
+            <img id="clubImage" src="andonoff.png" alt="Club Image" class="img-thumbnail" style="width: 1000px;">
         </div>
     </div>
 
-    <!-- Row for Images and Table -->
-    <div class="row mt-4">
-    <div class="col-md-6 text-center">
-        <!-- Use local paths for images -->
-        <img src="button-off-xxl.png" id="toggleImage" onclick="toggleImage(); toggleInputOne();" class="img-fluid"/>
-        <br>
-        <img src="button-off-xxl.png" id="toggleImage2" onclick="toggleImage2(); toggleInputTwo();" class="img-fluid"/>
-    </div>
-    <div class="col-md-6 text-center">
-        <img id="andGate" src="and2off.png" class="img-fluid"/>
-    </div>
-</div>
+</table>
 
-    <!-- Back Link -->
-    <div class="row mt-4">
-        <div class="col-md-12 text-center">
-            <a href="index.html" class="btn btn-link">Back to Home</a>
-        </div>
-    </div>
-</div>
+<a href="index.html">Back to Home</a></h3>
 
-<!-- JavaScript Links -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK4Y4E6Ff5oJ1QwK6nGvYXenH9xgEAy5p9o5pDa42xAep9V1XlA5" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1pL3IYZXs7huV7Geir92y1m0yOslpDZT5Or8k2QlIN6gg/m39ntTrG" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQ2s6x5to4/OGpamoFVy38VJX7fWgQkVfGGFf" crossorigin="anonymous"></script>
+</p>
 
-<script src="javascript.js"></script>
+
+
+
+
 
 </body>
+</html>
+
+
+
+
+
+</body>
+</html>
+
 <footer>
         <p>@ Powered by UB</p>
     </footer>
